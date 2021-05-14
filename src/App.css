@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+:root {
+  --primary-colour: #001674;
+  --secondary-colour: #26cfff;
+  height: var(--hamburger-height);
+  --primary-font-family: "Montserrat", sans-serif;
+  --secondary-font-family: "Noto Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Navbar */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: var(--primary-colour);
+  color: white;
+  font-family: var(--primary-font-family);
+  font-weight: bold;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto;
+  align-self: flex-start;
+  margin: 5px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 50px;
+  height: 45px;
+}
+
+.line {
+  background-color: white;
+  height: 8px;
+  width: 50px;
+  border-radius: 9999px;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.hamburger:hover > .line {
+  background-color: var(--secondary-colour);
+}
+
+.navbar-links {
+  display: none;
+}
+
+.navbar-links.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-navlinks,
+.right-navlinks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.navbar-link {
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.navbar-link:hover a {
+  color: var(--secondary-colour);
+  cursor: pointer;
+}
+
+.navbar-link a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Slideshow */
+
+.slideshow {
+  background-color: var(--secondary-colour);
+  height: 300px;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.featured-destinations {
+  background-color: var(--primary-colour);
+  color: white;
+  height: auto;
+}
+
+.contact {
+  height: 200px;
+  background-color: var(--secondary-colour);
+  color: white;
+}
+
+.about {
+  height: 200px;
+  background-color: var(--primary-colour);
+  color: white;
+}
+
+.sign-up {
+  height: 200px;
+  background-color: black;
+  color: white;
+}
+
+.footer {
+  background-color: var(--primary-colour);
+  height: 5vh;
+}
+
+@media (min-width: 550px) {
+  /* Navbar */
+
+  .navbar {
+    height: 50px;
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-logo {
+    height: 100px;
+    align-self: initial;
+    position: absolute;
+    margin: 0;
+  }
+
+  .navbar-links,
+  .navbar-links.open {
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar-link {
+    font-size: 0.7rem;
+  }
+
+  .left-navlinks,
+  .right-navlinks {
+    flex-direction: row;
+    width: 45%;
+  }
+
+  .left-navlinks {
+    justify-content: flex-start;
+  }
+
+  .right-navlinks {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 800px) {
+  /* Navbar */
+  .navbar-link {
+    font-size: 1rem;
   }
 }
