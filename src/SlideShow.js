@@ -34,7 +34,7 @@ export const SlideShow = () => {
   }, [moveRight]);
 
   return (
-    <div className="slideshow-container">
+    <section className="slideshow-container">
       <div
         className="slideshow"
         style={{
@@ -79,6 +79,6 @@ export const SlideShow = () => {
           ></div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

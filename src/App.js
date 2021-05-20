@@ -10,7 +10,7 @@ import { Footer } from "./Footer";
 
 function App() {
   return (
-    <div>
+    <>
       <NavBar />
       <SlideShow />
       <PhotoGrid />
@@ -19,7 +19,7 @@ function App() {
       <SignUp />
       <About />
       <Footer />
-    </div>
+    </>
   );
 }
 

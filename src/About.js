@@ -3,7 +3,7 @@ import Logo from "./images/Logo.png";
 
 export const About = () => {
   return (
-    <div className="about-us-container">
+    <section className="about-us-container">
       <img src={Logo} alt="Logo" className="about-us-logo" />
       <div className="about-us">
         <h2 className="about-us-heading">About Us</h2>
@@ -14,6 +14,6 @@ export const About = () => {
           more!
         </p>
       </div>
-    </div>
+    </section>
   );
 };

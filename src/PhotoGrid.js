@@ -4,7 +4,7 @@ import PhotoCards from "./photocard-data";
 
 export const PhotoGrid = () => {
   return (
-    <div className="featured-destinations">
+    <section className="featured-destinations">
       <h2 className="featured-destinations-heading">Featured Destinations</h2>
       <div className="photo-grid">
         {PhotoCards.map((photo, index) => {
@@ -19,6 +19,6 @@ export const PhotoGrid = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };

@@ -4,7 +4,7 @@ import { TourCard } from "./TourCard";
 
 export const TourCardContainer = () => {
   return (
-    <div className="tour-card-container">
+    <section className="tour-card-container">
       <h2 className="popular-tours-heading">Popular Tours</h2>
       <div className="tour-cards">
         {Tours.map((tour) => {
@@ -22,6 +22,6 @@ export const TourCardContainer = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
