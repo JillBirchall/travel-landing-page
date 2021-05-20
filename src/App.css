@@ -256,7 +256,7 @@ body {
 .featured-destination-country {
   position: absolute;
   bottom: 5px;
-  right: 10px;
+  right: 5px;
   font-size: 24px;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 1);
 }
@@ -493,50 +493,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Small devices in landscape */
-@media (orientation: landscape) and (max-height: 500px) {
-  /* Slideshow */
-  .slideshow-circles {
-    width: 15%;
-  }
-
-  .empty-circle,
-  .filled-circle {
-    height: 15px;
-    width: 15px;
-  }
-
-  .filled-circle {
-    background-position: 75px 0;
-  }
-
-  /* Featured Destinations Photogrid */
-  .featured-destination-country {
-    font-size: 12px;
-  }
-
-  .contact-us-container,
-  .sign-up-container {
-    height: 300px;
-  }
-
-  .contact-btn-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 35%;
-  }
-
-  .footer-links {
-    font-size: 10px;
-    width: 50%;
-  }
-
-  .social-icons {
-    font-size: 12px;
-  }
-}
-
 /* Medium devices */
 @media (min-width: 550px) {
   /* Navbar */
@@ -547,7 +503,7 @@ body {
   }
 
   .navbar-logo {
-    height: 100px;
+    height: 75px;
     align-self: initial;
     position: absolute;
     margin: 0;
@@ -730,7 +686,7 @@ body {
 
   /* Featured Destinations Photogrid */
   .featured-destination-country {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /* Popular Tours */
@@ -753,5 +709,48 @@ body {
   .contact-us-container,
   .sign-up-container {
     height: 200px;
+  }
+}
+
+/* Small devices in landscape */
+@media (orientation: landscape) and (max-height: 500px) {
+  /* Slideshow */
+  .slideshow-circles {
+    width: 15%;
+  }
+
+  .empty-circle,
+  .filled-circle {
+    height: 15px;
+    width: 15px;
+  }
+
+  .filled-circle {
+    background-position: 75px 0;
+  }
+
+  .featured-destination-country {
+    font-size: 12px;
+  }
+
+  .contact-us-container,
+  .sign-up-container {
+    height: 300px;
+  }
+
+  .contact-btn-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 35%;
+  }
+
+  .footer-links {
+    font-size: 10px;
+    width: 50%;
+  }
+
+  .social-icons {
+    font-size: 12px;
   }
 }
