@@ -6,7 +6,7 @@ export const NavBar = () => {
 
   return (
     <nav className="navbar">
-      <img className="navbar-logo" src={Logo} />
+      <img className="navbar-logo" src={Logo} alt="logo" />
       <div className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <div className="line"></div>
         <div className="line"></div>

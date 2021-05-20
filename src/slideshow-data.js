@@ -21,7 +21,7 @@ const Destinations = [
     id: 2,
     country: "Costa Rica",
     description:
-      "Go zip-lining, spot wildlife and colourful birds, snorkel and scuba dive, visit coffee plantation, relax in hot springs, watch baby sea turtles hatch",
+      "Go zip-lining, spot wildlife and colourful birds, snorkel and scuba dive, visit a coffee plantation, relax in hot springs, watch baby sea turtles hatch",
     image: CostaRica,
   },
 ];

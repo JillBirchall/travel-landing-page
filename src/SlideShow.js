@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Destinations from "./slideshow-data";
 
 export const SlideShow = () => {
   const [currentDestination, setCurrentDestination] = useState(0);
   const destinations = [...Destinations];
 
-  function changeSlide(newSlide) {
-    if (newSlide === currentDestination) return;
-    setCurrentDestination(newSlide);
-  }
-
-  function moveRight() {
+  const moveRight = useCallback(() => {
     let newSlide;
     currentDestination === 2
       ? (newSlide = 0)
       : (newSlide = currentDestination + 1);
+    setCurrentDestination(newSlide);
+  }, [currentDestination]);
+
+  function changeSlide(newSlide) {
+    if (newSlide === currentDestination) return;
     setCurrentDestination(newSlide);
   }
 
@@ -23,9 +23,15 @@ export const SlideShow = () => {
     currentDestination === 0
       ? (newSlide = 2)
       : (newSlide = currentDestination - 1);
-    console.log(newSlide);
     setCurrentDestination(newSlide);
   }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      moveRight();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [moveRight]);
 
   return (
     <div className="slideshow-container">
@@ -49,7 +55,7 @@ export const SlideShow = () => {
         <p className="slideshow-text slideshow-description-text">
           {destinations[currentDestination].description}
         </p>
-        <button className="slideshow-btn">
+        <button className="slideshow-btn btn">
           View {destinations[currentDestination].country} Tours
         </button>
         <div className="slideshow-circles">

@@ -16,8 +16,8 @@ function App() {
       <PhotoGrid />
       <TourCardContainer />
       <Contact />
-      <About />
       <SignUp />
+      <About />
       <Footer />
     </div>
   );
