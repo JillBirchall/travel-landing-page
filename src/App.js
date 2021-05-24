@@ -11,13 +11,17 @@ import { Footer } from "./Footer";
 function App() {
   return (
     <>
-      <NavBar />
-      <SlideShow />
-      <PhotoGrid />
-      <TourCardContainer />
-      <Contact />
-      <SignUp />
-      <About />
+      <header>
+        <NavBar />
+      </header>
+      <main>
+        <SlideShow />
+        <PhotoGrid />
+        <TourCardContainer />
+        <Contact />
+        <SignUp />
+        <About />
+      </main>
       <Footer />
     </>
   );

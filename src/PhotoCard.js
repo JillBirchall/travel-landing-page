@@ -2,7 +2,10 @@ import React from "react";
 
 export const PhotoCard = ({ photoNumber, image, country, altText }) => {
   return (
-    <div className={`featured-destination-card photo-${photoNumber}`}>
+    <div
+      className={`featured-destination-card photo-${photoNumber}`}
+      tabIndex="0"
+    >
       <img src={image} alt={altText} className="featured-destination-photo" />
       <h3 className="featured-destination-country">{country}</h3>
     </div>

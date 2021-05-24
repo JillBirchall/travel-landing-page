@@ -1,5 +1,5 @@
 import React from "react";
-import Tours from "./tour-data";
+import Tours from "./data/tour-data";
 import { TourCard } from "./TourCard";
 
 export const TourCardContainer = () => {

@@ -172,12 +172,12 @@ body {
 }
 
 .slideshow-chevron-left {
-  background-image: url("images/chevron-left.png");
+  background-image: url("images/slideshow/chevron-left.png");
   left: 0px;
 }
 
 .slideshow-chevron-right {
-  background-image: url("images/chevron-right.png");
+  background-image: url("images/slideshow/chevron-right.png");
   right: 0px;
 }
 
@@ -196,7 +196,7 @@ body {
 }
 
 .empty-circle {
-  background-image: url("images/slideshow-circles.png");
+  background-image: url("images/slideshow/slideshow-circles.png");
   background-position: 0 0;
 }
 
@@ -206,7 +206,7 @@ body {
 }
 
 .filled-circle {
-  background-image: url("images/slideshow-circles.png");
+  background-image: url("images/slideshow/slideshow-circles.png");
   background-position: 100px 0;
 }
 

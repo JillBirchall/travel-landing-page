@@ -1,10 +1,10 @@
-import Jordan from "./images/jordan.jpg";
-import Peru from "./images/peru.jpg";
-import Iceland from "./images/iceland-waterfall.jpg";
-import Kenya from "./images/kenya.jpg";
-import Antarctica from "./images/antarctica.jpg";
-import Nepal from "./images/tiger.jpg";
-import Mexico from "./images/mexico.jpg";
+import Jordan from "../images/destinations/jordan.jpg";
+import Peru from "../images/destinations/peru.jpg";
+import Iceland from "../images/destinations/iceland-waterfall.jpg";
+import Kenya from "../images/destinations/kenya.jpg";
+import Antarctica from "../images/destinations/antarctica.jpg";
+import Nepal from "../images/destinations/tiger.jpg";
+import Mexico from "../images/destinations/mexico.jpg";
 
 const PhotoCards = [
   {

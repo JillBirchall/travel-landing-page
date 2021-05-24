@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import Destinations from "./slideshow-data";
+import Destinations from "./data/slideshow-data";
 
 export const SlideShow = () => {
   const [currentDestination, setCurrentDestination] = useState(0);
@@ -44,10 +44,20 @@ export const SlideShow = () => {
         <div
           className="slideshow-chevron slideshow-chevron-left"
           onClick={moveLeft}
+          onKeyUp={(e) => {
+            return e.key !== "Enter" || moveLeft();
+          }}
+          aria-label="previous-slide"
+          tabIndex="0"
         ></div>
         <div
           className="slideshow-chevron slideshow-chevron-right"
           onClick={moveRight}
+          onKeyUp={(e) => {
+            return e.key !== "Enter" || moveRight();
+          }}
+          aria-label="next-slide"
+          tabIndex="0"
         ></div>
         <h1 className="slideshow-text slideshow-country-text">
           {destinations[currentDestination].country}
@@ -64,18 +74,36 @@ export const SlideShow = () => {
               currentDestination === 0 ? "filled-circle" : "empty-circle"
             }`}
             onClick={() => changeSlide(0)}
+            onKeyUp={(e) => {
+              return e.key !== "Enter" || changeSlide(0);
+            }}
+            aria-label="1 of 3"
+            aria-selected={`${currentDestination === 0 ? "true" : "false"}`}
+            tabIndex="0"
           ></div>
           <div
             className={`${
               currentDestination === 1 ? "filled-circle" : "empty-circle"
             }`}
             onClick={() => changeSlide(1)}
+            onKeyUp={(e) => {
+              return e.key !== "Enter" || changeSlide(1);
+            }}
+            aria-label="2 of 3"
+            aria-selected={`${currentDestination === 1 ? "true" : "false"}`}
+            tabIndex="0"
           ></div>
           <div
             className={`${
               currentDestination === 2 ? "filled-circle" : "empty-circle"
             }`}
             onClick={() => changeSlide(2)}
+            onKeyUp={(e) => {
+              return e.key !== "Enter" || changeSlide(2);
+            }}
+            aria-label="3 of 3"
+            aria-selected={`${currentDestination === 2 ? "true" : "false"}`}
+            tabIndex="0"
           ></div>
         </div>
       </div>

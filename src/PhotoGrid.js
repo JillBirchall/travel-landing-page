@@ -1,6 +1,6 @@
 import React from "react";
 import { PhotoCard } from "./PhotoCard";
-import PhotoCards from "./photocard-data";
+import PhotoCards from "./data/photocard-data";
 
 export const PhotoGrid = () => {
   return (
