@@ -1,6 +1,7 @@
 import "./App.css";
 import { NavBar } from "./NavBar";
 import { SlideShow } from "./SlideShow";
+import { Title } from "./Title";
 import { PhotoGrid } from "./PhotoGrid";
 import { TourCardContainer } from "./TourCardContainer";
 import { Contact } from "./Contact";
@@ -14,8 +15,9 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <main>
+      <main id="top">
         <SlideShow />
+        <Title />
         <PhotoGrid />
         <TourCardContainer />
         <Contact />

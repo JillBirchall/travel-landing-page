@@ -10,7 +10,7 @@ export const TourCard = ({
   description,
 }) => {
   return (
-    <aticle className="tour-card">
+    <article className="tour-card">
       <div className="tour-image">
         <img src={image} alt={altText} className="tour-photo" />
         <h3 className="tour-country">{country}</h3>
@@ -22,6 +22,6 @@ export const TourCard = ({
       </div>
       <p className="tour-description">{description}</p>
       <button className="view-tour-btn btn">View Tour</button>
-    </aticle>
+    </article>
   );
 };

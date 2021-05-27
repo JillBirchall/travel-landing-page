@@ -5,6 +5,8 @@
   --primary-font-family: "Montserrat", Verdana, Arial, sans-serif;
   --secondary-font-family: "Noto Sans", sans-serif;
   --navbar-height: 50px;
+  scroll-padding-top: var(--navbar-height);
+  scroll-behavior: smooth;
 }
 
 *,
@@ -51,11 +53,14 @@ body {
 }
 
 .navbar-logo {
+  width: auto;
+  align-self: flex-start;
+}
+
+.navbar-logo img {
   --nav-logo-margin: 5px;
   height: calc(var(--navbar-height) - calc(var(--nav-logo-margin) * 2));
   margin: var(--nav-logo-margin);
-  width: auto;
-  align-self: flex-start;
 }
 
 .navbar-logo:hover {
@@ -106,22 +111,70 @@ body {
   align-items: center;
 }
 
+.navbar-btn,
 .navbar-link {
   width: 100%;
   text-align: center;
   list-style: none;
   padding: 1rem;
-  font-size: 1rem;
 }
 
+.navbar-btn {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-btn:hover button,
 .navbar-link:hover a {
   color: var(--secondary-colour);
   cursor: pointer;
+  transform: scale(1.2);
+}
+
+.navbar-link a,
+.navbar-btn button {
+  color: white;
+  font-size: 1rem;
+  font-family: var(--primary-font-family);
+}
+
+.dropdown-btn {
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.dropdown-chevron {
+  margin-left: 10px;
 }
 
 .navbar-link a {
   text-decoration: none;
-  color: white;
+}
+
+.dropdown-link {
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-link:hover {
+  color: var(--primary-colour);
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: var(--secondary-colour);
+}
+
+.dropdown-content.expand {
+  display: block;
 }
 
 /* Slideshow */
@@ -208,6 +261,29 @@ body {
 .filled-circle {
   background-image: url("images/slideshow/slideshow-circles.png");
   background-position: 100px 0;
+}
+
+/* Main Title */
+
+.main-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: var(--primary-colour);
+}
+
+.main-title-container img {
+  height: 100px;
+}
+
+.main-title-container h1 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--primary-text-colour);
+  font-family: var(--primary-font-family);
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 /* Featured Destinations Photo Grid*/
@@ -456,6 +532,7 @@ body {
 .about-us-text {
   text-align: center;
   margin: 0 20px 20px 20px;
+  font-weight: 700;
 }
 
 /* Footer */
@@ -503,9 +580,12 @@ body {
   }
 
   .navbar-logo {
-    height: 75px;
     align-self: initial;
     position: absolute;
+  }
+
+  .navbar-logo img {
+    height: 75px;
     margin: 0;
   }
 
@@ -515,6 +595,10 @@ body {
     justify-content: space-between;
     display: flex;
     width: 100%;
+  }
+
+  .navbar-btn:hover .dropdown-content {
+    display: block;
   }
 
   .hamburger {
@@ -537,6 +621,27 @@ body {
 
   .right-navlinks {
     justify-content: flex-end;
+  }
+
+  .navbar-btn {
+    border: none;
+  }
+
+  .dropdown-content {
+    background-color: var(--primary-colour);
+    min-width: 200px;
+    z-index: 2;
+    position: absolute;
+    top: var(--navbar-height);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.4);
+  }
+
+  .dropdown-link:hover {
+    background-color: var(--secondary-colour);
+  }
+
+  .dropdown-chevron {
+    display: none;
   }
 
   /* Slideshow */
@@ -682,6 +787,20 @@ body {
 
   .slideshow-circles {
     width: 10%;
+  }
+
+  /* Main Title */
+
+  .main-title-container {
+    justify-content: space-around;
+  }
+
+  .main-title-container img {
+    height: 200px;
+  }
+
+  .main-title-container h1 {
+    font-size: 48px;
   }
 
   /* Featured Destinations Photogrid */

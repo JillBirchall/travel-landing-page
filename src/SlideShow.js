@@ -59,9 +59,9 @@ export const SlideShow = () => {
           aria-label="next-slide"
           tabIndex="0"
         ></div>
-        <h1 className="slideshow-text slideshow-country-text">
+        <h2 className="slideshow-text slideshow-country-text">
           {destinations[currentDestination].country}
-        </h1>
+        </h2>
         <p className="slideshow-text slideshow-description-text">
           {destinations[currentDestination].description}
         </p>
