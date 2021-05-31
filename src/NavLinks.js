@@ -15,10 +15,10 @@ export const NavLinks = () => {
           return <NavLinkMenu name={link.name} links={link.links} />;
         })}
         <li className="navbar-link">
-          <a href="#contactUs">Enquire</a>
+          <a href="#contact">Enquire</a>
         </li>
         <li className="navbar-link">
-          <a href="#aboutUs">About</a>
+          <a href="#about">About</a>
         </li>
       </ul>
     </div>

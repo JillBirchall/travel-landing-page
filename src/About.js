@@ -3,7 +3,7 @@ import Logo from "./images/Logo.png";
 
 export const About = () => {
   return (
-    <section className="about-us-container" id="aboutUs">
+    <section className="about-us-container" id="about">
       <img src={Logo} alt="Logo" className="about-us-logo" />
       <div className="about-us">
         <h2 className="about-us-heading">About Us</h2>

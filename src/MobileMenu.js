@@ -23,10 +23,10 @@ export const MobileMenu = ({ toggleMenu }) => {
           />
         );
       })}
-      <a href="#contactUs" className="mobile-menu-link" onClick={toggleMenu}>
+      <a href="#contact" className="mobile-menu-link" onClick={toggleMenu}>
         Enquire
       </a>
-      <a href="#aboutUs" className="mobile-menu-link" onClick={toggleMenu}>
+      <a href="#about" className="mobile-menu-link" onClick={toggleMenu}>
         About
       </a>
     </div>
