@@ -1,10 +1,10 @@
 import React from "react";
 import {
-  FaInstagram,
-  FaFacebookSquare,
-  FaTwitter,
-  FaPinterest,
-} from "react-icons/fa";
+  SiTwitter,
+  SiFacebook,
+  SiInstagram,
+  SiPinterest,
+} from "react-icons/si";
 
 export const Footer = () => {
   return (
@@ -15,16 +15,16 @@ export const Footer = () => {
       </ul>
       <ul className="social-icons">
         <li>
-          <FaTwitter />
+          <SiTwitter />
         </li>
         <li>
-          <FaFacebookSquare />
+          <SiFacebook />
         </li>
         <li>
-          <FaInstagram />
+          <SiInstagram />
         </li>
         <li>
-          <FaPinterest />
+          <SiPinterest />
         </li>
       </ul>
     </footer>
