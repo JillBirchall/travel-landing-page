@@ -30,12 +30,6 @@ body {
   font-size: 16px;
 }
 
-.btn:hover {
-  cursor: pointer;
-  background-color: var(--secondary-colour);
-  color: var(--primary-colour);
-}
-
 /* Navbar */
 
 .navbar {
@@ -64,10 +58,6 @@ body {
   margin: var(--nav-logo-margin);
 }
 
-.navbar-logo:hover {
-  cursor: pointer;
-}
-
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -85,14 +75,6 @@ body {
   height: 5px;
   width: 40px;
   border-radius: 9999px;
-}
-
-.hamburger:hover {
-  cursor: pointer;
-}
-
-.hamburger:hover > .line {
-  background-color: var(--secondary-colour);
 }
 
 .navbar-links {
@@ -128,14 +110,6 @@ body {
   font-family: var(--primary-font-family);
 }
 
-.navbar-btn:hover button,
-.navbar-link:hover,
-.navbar-link:hover a {
-  color: var(--secondary-colour);
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
 .menu-links {
   display: flex;
   flex-direction: column;
@@ -166,11 +140,6 @@ body {
   font-size: 16px;
 }
 
-.dropdown-link:hover {
-  background-color: var(--secondary-colour);
-  cursor: pointer;
-}
-
 .dropdown-content {
   display: none;
   background-color: white;
@@ -194,12 +163,6 @@ body {
 
 .mobile-menu-link {
   padding: 1rem 0;
-}
-
-.dropdown-btn:hover,
-.mobile-menu-link:hover {
-  cursor: pointer;
-  color: var(--secondary-colour);
 }
 
 /* Slideshow */
@@ -245,11 +208,6 @@ body {
   height: 50px;
 }
 
-.slideshow-chevron:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
 .slideshow-chevron-left {
   background-image: url("images/slideshow/chevron-left.png");
   left: 0px;
@@ -277,11 +235,6 @@ body {
 .empty-circle {
   background-image: url("images/slideshow/slideshow-circles.png");
   background-position: 0 0;
-}
-
-.empty-circle:hover {
-  cursor: pointer;
-  transform: scale(1.2);
 }
 
 .filled-circle {
@@ -347,14 +300,6 @@ body {
   transition: transform 0.2s ease-in;
 }
 
-.featured-destination-card:hover {
-  cursor: pointer;
-}
-
-.featured-destination-card:hover .featured-destination-photo {
-  transform: scale(1.2);
-}
-
 .featured-destination-country {
   position: absolute;
   bottom: 5px;
@@ -393,10 +338,6 @@ body {
   -webkit-box-shadow: 0 4px 16px 0 rgba(0, 10, 53, 0.25);
   box-shadow: 0 4px 16px 0 rgba(0, 10, 53, 0.25);
   transition: transform 0.2s ease-in;
-}
-
-.tour-card:hover {
-  transform: scale(1.05);
 }
 
 .tour-image {
@@ -486,11 +427,6 @@ body {
   margin-bottom: 10px;
 }
 
-.contact-btn:hover {
-  background-color: #ffffff;
-  border: 1px solid var(--primary-colour);
-}
-
 /* Sign Up */
 .sign-up-container {
   height: 250px;
@@ -521,10 +457,6 @@ body {
   background-color: var(--secondary-colour);
   position: absolute;
   bottom: 20px;
-}
-
-.sign-up-btn:hover {
-  background-color: #ffffff;
 }
 
 /* About Section */
@@ -590,11 +522,82 @@ body {
   width: 100%;
 }
 
-.footer-links li:hover,
-.social-icons li:hover {
-  cursor: pointer;
-  color: var(--secondary-colour);
-  transform: scale(1.1);
+/* Hover effects */
+@media (hover: hover) {
+  .btn:hover {
+    cursor: pointer;
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
+  }
+
+  .navbar-logo:hover {
+    cursor: pointer;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  .hamburger:hover > .line {
+    background-color: var(--secondary-colour);
+  }
+
+  .navbar-btn:hover button,
+  .navbar-link:hover,
+  .navbar-link:hover a {
+    color: var(--secondary-colour);
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .dropdown-btn:hover,
+  .mobile-menu-link:hover {
+    cursor: pointer;
+    color: var(--secondary-colour);
+  }
+
+  .dropdown-link:hover {
+    background-color: var(--secondary-colour);
+    cursor: pointer;
+  }
+
+  .slideshow-chevron:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .empty-circle:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  .featured-destination-card:hover {
+    cursor: pointer;
+  }
+
+  .featured-destination-card:hover .featured-destination-photo {
+    transform: scale(1.2);
+  }
+
+  .tour-card:hover {
+    transform: scale(1.05);
+  }
+
+  .contact-btn:hover {
+    background-color: #ffffff;
+    border: 1px solid var(--primary-colour);
+  }
+
+  .sign-up-btn:hover {
+    background-color: #ffffff;
+  }
+
+  .footer-links li:hover,
+  .social-icons li:hover {
+    cursor: pointer;
+    color: var(--secondary-colour);
+    transform: scale(1.1);
+  }
 }
 
 /* Medium devices */
