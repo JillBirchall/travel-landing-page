@@ -2,13 +2,15 @@
 
 A React landing page for a fictional adventure travel company. 
 
-I chose to use React to create this landing page as I could break down the various sections of this website into smaller components, and re-use these where required. 
+I chose to use React to create this landing page as I could break down the various sections of this website into smaller components, and re-use these where required (such as the tour cards). 
 
 I created the logo used for this website as part of a Adobe PhotoShop Daily Creative Challenge I completed in 2020. The Behance project can be found here: [Behance Project Link](https://www.behance.net/gallery/99486457/Photoshop-DCC-22nd-June-to-26th-June-2020)
 
 ## Issues I encountered
 
 This landing page features alot of photographs and images which can impact performance. I needed to resize these to be the smallest file size possible whilst still being high enough quality to look good on the website. 
+
+I wanted to ensure that this website looked good on both desktop and mobile devices, so had to change the layout accordingly. I wrote the CSS mobile-first, which had a hamburger menu and a basic column layout for the Destinations and Tour Cards, and scaled this up to use drop-down menus and photo grids for larger screens.  
 
 ## Photographs
 
