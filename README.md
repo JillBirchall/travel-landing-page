@@ -6,10 +6,13 @@ I chose to use React to create this landing page as I could break down the vario
 
 I created the logo used for this website as part of a Adobe PhotoShop Daily Creative Challenge I completed in 2020. The Behance project can be found here: [Behance Project Link](https://www.behance.net/gallery/99486457/Photoshop-DCC-22nd-June-to-26th-June-2020)
 
+## Issues I encountered
+
+This landing page features alot of photographs and images which can impact performance. I needed to resize these to be the smallest file size possible whilst still being high enough quality to look good on the website. 
+
 ## Photographs
 
 The photographs used in this website were either taken by myself or were taken from Pixabay or Unsplash.
-
 
 The photographs of Petra (Jordan card), Macchu Picchu (Peru card), the elephant (Kenya card) and Peles Castle (Romania tour card) were taken by myself and copyright applies to these.
 
