@@ -10,7 +10,7 @@ I created the logo used for this website as part of a Adobe PhotoShop Daily Crea
 
 This landing page features alot of photographs and images which can impact performance. I needed to resize these to be the smallest file size possible whilst still being high enough quality to look good on the website. 
 
-I wanted to ensure that this website looked good on both desktop and mobile devices, so had to change the layout accordingly. I wrote the CSS mobile-first, which had a hamburger menu and a basic column layout for the Destinations and Tour Cards, and scaled this up to use drop-down menus and photo grids for larger screens.  
+I wanted to ensure that this website looked good on both desktop and mobile devices, so had to change the layout accordingly. I wrote the CSS to be mobile-first, which involved having a hamburger menu and a basic column layout for the Destinations and Tour Cards. I then scaled this up to use drop-down menus and photo grids for larger screens.  
 
 ## Photographs
 
