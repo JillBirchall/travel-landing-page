@@ -7,7 +7,11 @@ export const NavLinkMenu = ({ name, links }) => {
         <button className="dropdown-btn">{name}</button>
         <div className="dropdown-content">
           {links.map((link) => {
-            return <p className="dropdown-link">{link}</p>;
+            return (
+              <p className="dropdown-link" key={link.id}>
+                {link.name}
+              </p>
+            );
           })}
         </div>
       </li>
