@@ -1,3 +1,23 @@
+# Landing Page
+
+A React landing page for a fictional adventure travel company. 
+
+I chose to use React to create this landing page as I could break down the various sections of this website into smaller components, and re-use these where required. 
+
+I created the logo used for this website as part of a Adobe PhotoShop Daily Creative Challenge I completed in 2020. The Behance project can be found here: [Behance Project Link](https://www.behance.net/gallery/99486457/Photoshop-DCC-22nd-June-to-26th-June-2020)
+
+## Photographs
+
+The photographs used in this website were either taken by myself or were taken from Pixabay or Unsplash.
+
+
+The photographs of Petra (Jordan card), Macchu Picchu (Peru card), the elephant (Kenya card) and Peles Castle (Romania tour card) were taken by myself and copyright applies to these.
+
+### Photograph Attributions
+
+_**Pixabay Photographs** Northern Lights (used in slideshow): [Solhaugfoto](https://pixabay.com/users/solhaugfoto-6304357/), Costa Rica Volcano (used in slideshow): [InfiniteThought](https://pixabay.com/users/infinitethought-5496829/), Waterfall (Iceland card) & Ice with Sunset (Iceland Tour card): [12019](https://pixabay.com/users/12019-12019/), Iceberg (Anarctica card): [358611](https://pixabay.com/users/358611-358611/), Tiger (Nepal card): [Andibreit](https://pixabay.com/users/andibreit-2748383/), Scuba Diver (Mexico card): [jhovani_serralta](https://pixabay.com/users/jhovani_serralta-179436/), Elephants under Mount Kilimajaro (Tanzania tour card): [herbert2512](https://pixabay.com/users/herbert2512-2929941/), Chichen Itza (Mexico tour card): [Makalu](https://pixabay.com/users/makalu-680451/), Everest (Nepal tour card): [Simon](https://pixabay.com/users/simon-3/) _
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
