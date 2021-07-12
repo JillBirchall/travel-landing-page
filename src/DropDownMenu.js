@@ -18,7 +18,11 @@ export const DropDownMenu = ({ name, links, toggleSubMenu, isSubMenuOpen }) => {
         }`}
       >
         {links.map((link) => {
-          return <p className="dropdown-link">{link}</p>;
+          return (
+            <p className="dropdown-link" key={link.id}>
+              {link.name}
+            </p>
+          );
         })}
       </div>
     </>

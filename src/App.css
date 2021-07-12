@@ -626,6 +626,10 @@ body {
     width: 100%;
   }
 
+  .navbar-link a {
+    font-size: 12px;
+  }
+
   .navbar-btn:hover .dropdown-content {
     display: block;
   }
@@ -802,7 +806,7 @@ body {
 /* Large Screens */
 @media (min-width: 800px) {
   /* Navbar */
-  .navbar-link {
+  .navbar-link a {
     font-size: 16px;
   }
 
