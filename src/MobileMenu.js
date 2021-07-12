@@ -18,6 +18,7 @@ export const MobileMenu = ({ toggleMenu }) => {
           <DropDownMenu
             name={link.name}
             links={link.links}
+            key={link.id}
             toggleSubMenu={toggleSubMenu}
             isSubMenuOpen={currentDropDown === link.name ? true : false}
           />
