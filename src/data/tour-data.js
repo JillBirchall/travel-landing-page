@@ -1,9 +1,9 @@
-import Iceland from "../images/tours/iceland-sunset.jpg";
-import Indonesia from "../images/tours/komodo.jpg";
-import Tanzania from "../images/tours/safari.jpg";
-import Mexico from "../images/tours/chichen-itza.jpg";
-import Nepal from "../images/tours/everest.jpg";
-import Romania from "../images/tours/romania.jpg";
+import Iceland from "../images/tours/Iceland-sunset.jpg";
+import Indonesia from "../images/tours/Komodo.jpg";
+import Tanzania from "../images/tours/Safari.jpg";
+import Mexico from "../images/tours/Chichen-itza.jpg";
+import Nepal from "../images/tours/Everest.jpg";
+import Romania from "../images/tours/Romania.jpg";
 
 const Tours = [
   {
