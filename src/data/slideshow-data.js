@@ -1,6 +1,6 @@
 import Iceland from "../images/slideshow/Iceland.jpg";
-import Indonesia from "../images/slideshow/indonesia.jpg";
-import CostaRica from "../images/slideshow/costa-rica.jpg";
+import Indonesia from "../images/slideshow/Indonesia.jpg";
+import CostaRica from "../images/slideshow/Costa-rica.jpg";
 
 const Destinations = [
   {
