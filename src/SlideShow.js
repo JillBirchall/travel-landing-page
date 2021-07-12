@@ -69,42 +69,63 @@ export const SlideShow = () => {
           View {destinations[currentDestination].country} Tours
         </button>
         <div className="slideshow-circles">
-          <div
-            className={`${
-              currentDestination === 0 ? "filled-circle" : "empty-circle"
-            }`}
-            onClick={() => changeSlide(0)}
-            onKeyUp={(e) => {
-              return e.key !== "Enter" || changeSlide(0);
-            }}
-            aria-label="1 of 3"
-            aria-selected={`${currentDestination === 0 ? "true" : "false"}`}
-            tabIndex="0"
-          ></div>
-          <div
-            className={`${
-              currentDestination === 1 ? "filled-circle" : "empty-circle"
-            }`}
-            onClick={() => changeSlide(1)}
-            onKeyUp={(e) => {
-              return e.key !== "Enter" || changeSlide(1);
-            }}
-            aria-label="2 of 3"
-            aria-selected={`${currentDestination === 1 ? "true" : "false"}`}
-            tabIndex="0"
-          ></div>
-          <div
-            className={`${
-              currentDestination === 2 ? "filled-circle" : "empty-circle"
-            }`}
-            onClick={() => changeSlide(2)}
-            onKeyUp={(e) => {
-              return e.key !== "Enter" || changeSlide(2);
-            }}
-            aria-label="3 of 3"
-            aria-selected={`${currentDestination === 2 ? "true" : "false"}`}
-            tabIndex="0"
-          ></div>
+          {currentDestination === 0 ? (
+            <div
+              className="filled-circle"
+              aria-label="1 of 3"
+              tabIndex="0"
+              aria-selected="true"
+            ></div>
+          ) : (
+            <div
+              className="empty-circle"
+              aria-label="1 of 3"
+              tabIndex="0"
+              aria-selected="false"
+              onClick={() => changeSlide(0)}
+              onKeyUp={(e) => {
+                return e.key !== "Enter" || changeSlide(0);
+              }}
+            ></div>
+          )}
+          {currentDestination === 1 ? (
+            <div
+              className="filled-circle"
+              aria-label="2 of 3"
+              tabIndex="0"
+              aria-selected="true"
+            ></div>
+          ) : (
+            <div
+              className="empty-circle"
+              aria-label="2 of 3"
+              tabIndex="0"
+              aria-selected="false"
+              onClick={() => changeSlide(1)}
+              onKeyUp={(e) => {
+                return e.key !== "Enter" || changeSlide(1);
+              }}
+            ></div>
+          )}
+          {currentDestination === 2 ? (
+            <div
+              className="filled-circle"
+              aria-label="3 of 3"
+              tabIndex="0"
+              aria-selected="true"
+            ></div>
+          ) : (
+            <div
+              className="empty-circle"
+              aria-label="3 of 3"
+              tabIndex="0"
+              aria-selected="false"
+              onClick={() => changeSlide(2)}
+              onKeyUp={(e) => {
+                return e.key !== "Enter" || changeSlide(2);
+              }}
+            ></div>
+          )}
         </div>
       </div>
     </section>
