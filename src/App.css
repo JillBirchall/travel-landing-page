@@ -630,8 +630,16 @@ body {
     font-size: 12px;
   }
 
-  .navbar-btn:hover .dropdown-content {
-    display: block;
+  @media (hover: hover) {
+    .navbar-btn:hover .dropdown-content {
+      display: block;
+    }
+  }
+
+  @media (hover: none) {
+    .dropdown-content.display {
+      display: block;
+    }
   }
 
   .hamburger {
