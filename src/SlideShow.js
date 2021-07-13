@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Destinations from "./data/slideshow-data";
+import { EmptyCircle } from "./EmptyCircle";
+import { FilledCircle } from "./FilledCircle";
 
 export const SlideShow = () => {
   const [currentDestination, setCurrentDestination] = useState(0);
@@ -70,61 +72,19 @@ export const SlideShow = () => {
         </button>
         <div className="slideshow-circles">
           {currentDestination === 0 ? (
-            <div
-              className="filled-circle"
-              aria-label="1 of 3"
-              tabIndex="0"
-              aria-selected="true"
-            ></div>
+            <FilledCircle slideNumber={1} />
           ) : (
-            <div
-              className="empty-circle"
-              aria-label="1 of 3"
-              tabIndex="0"
-              aria-selected="false"
-              onClick={() => changeSlide(0)}
-              onKeyUp={(e) => {
-                return e.key !== "Enter" || changeSlide(0);
-              }}
-            ></div>
+            <EmptyCircle slideNumber={1} changeSlide={changeSlide} />
           )}
           {currentDestination === 1 ? (
-            <div
-              className="filled-circle"
-              aria-label="2 of 3"
-              tabIndex="0"
-              aria-selected="true"
-            ></div>
+            <FilledCircle slideNumber={2} />
           ) : (
-            <div
-              className="empty-circle"
-              aria-label="2 of 3"
-              tabIndex="0"
-              aria-selected="false"
-              onClick={() => changeSlide(1)}
-              onKeyUp={(e) => {
-                return e.key !== "Enter" || changeSlide(1);
-              }}
-            ></div>
+            <EmptyCircle slideNumber={2} changeSlide={changeSlide} />
           )}
           {currentDestination === 2 ? (
-            <div
-              className="filled-circle"
-              aria-label="3 of 3"
-              tabIndex="0"
-              aria-selected="true"
-            ></div>
+            <FilledCircle slideNumber={3} />
           ) : (
-            <div
-              className="empty-circle"
-              aria-label="3 of 3"
-              tabIndex="0"
-              aria-selected="false"
-              onClick={() => changeSlide(2)}
-              onKeyUp={(e) => {
-                return e.key !== "Enter" || changeSlide(2);
-              }}
-            ></div>
+            <EmptyCircle slideNumber={3} changeSlide={changeSlide} />
           )}
         </div>
       </div>
