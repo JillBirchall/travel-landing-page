@@ -167,7 +167,7 @@ body {
 
 /* Slideshow */
 .slideshow-container {
-  background-color: var(--secondary-colour);
+  background-color: var(--primary-colour);
   height: 300px;
   width: 100%;
   margin-top: var(--navbar-height);
@@ -210,12 +210,12 @@ body {
 
 .slideshow-chevron-left {
   background-image: url("images/slideshow/chevron-left.png");
-  left: 0px;
+  left: 5px;
 }
 
 .slideshow-chevron-right {
   background-image: url("images/slideshow/chevron-right.png");
-  right: 0px;
+  right: 5px;
 }
 
 .slideshow-circles {
