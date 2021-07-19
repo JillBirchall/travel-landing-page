@@ -6,9 +6,11 @@ export const NavLinks = () => {
   const [currentMenu, setCurrentMenu] = useState("");
 
   function toggleMenu(event, menuName) {
-    if (menuName === currentMenu) setCurrentMenu("");
-    //Close the submenu if it is already open
-    else {
+    if (menuName === currentMenu) {
+      //Close the submenu if it is already open
+      setCurrentMenu("");
+      event.target.blur(); //Blur the menu button in case it was clicked to close menu. Fix for ios issue.
+    } else {
       setCurrentMenu(menuName);
       event.target.focus(); //Fix for ios to focus the menu button so it can be blurred later!
     }
