@@ -6,8 +6,8 @@ export const NavLinkMenu = ({ name, links, isMenuOpen, toggleMenu }) => {
       <li className="navbar-btn">
         <button
           className="dropdown-btn"
-          onClick={() => toggleMenu(name)}
-          onBlur={() => toggleMenu(name)}
+          onClick={(e) => toggleMenu(e, name)}
+          onBlur={(e) => toggleMenu(e, name)}
         >
           {name}
         </button>

@@ -5,10 +5,13 @@ import SubMenuLinks from "./data/submenu-data";
 export const NavLinks = () => {
   const [currentMenu, setCurrentMenu] = useState("");
 
-  function toggleMenu(menuName) {
+  function toggleMenu(event, menuName) {
     if (menuName === currentMenu) setCurrentMenu("");
     //Close the submenu if it is already open
-    else setCurrentMenu(menuName);
+    else {
+      setCurrentMenu(menuName);
+      event.target.focus(); //Fix for ios to focus the menu button so it can be blurred later!
+    }
   }
 
   return (
