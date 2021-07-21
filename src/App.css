@@ -94,6 +94,8 @@ body {
   width: 100%;
   text-align: center;
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-btn {
@@ -822,7 +824,7 @@ body {
 }
 
 /* Large Screens */
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   /* Navbar */
   .navbar-link a {
     font-size: 16px;
