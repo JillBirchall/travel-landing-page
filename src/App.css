@@ -3,7 +3,7 @@
   --secondary-colour: #26cfff;
   --primary-text-colour: #ffffff;
   --primary-font-family: "Montserrat", Verdana, Arial, sans-serif;
-  --secondary-font-family: "Noto Sans", sans-serif;
+  --secondary-font-family: "Noto Sans", Arial, sans-serif;
   --navbar-height: 50px;
   scroll-padding-top: var(--navbar-height);
   scroll-behavior: smooth;
