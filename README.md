@@ -1,6 +1,6 @@
 # Landing Page
 
-A React landing page for a fictional adventure travel company. 
+A React landing page for a fictional adventure travel company. This is not intended to be a full website, just the landing page so none of the buttons and links do anything (unless they are links to other sections of the page). 
 
 I chose to use React to create this landing page as I could break down the various sections of this website into smaller components, and re-use these where required (such as the tour cards). 
 
