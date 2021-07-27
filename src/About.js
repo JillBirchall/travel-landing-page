@@ -18,6 +18,7 @@ export const About = () => {
             textAlign: `center`,
             fontStyle: `italic`,
             fontWeight: `bold`,
+            margin: `20px`,
           }}
         >
           * This is a completely fictional website created for a front-end web
