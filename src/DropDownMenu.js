@@ -1,5 +1,5 @@
 import React from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { MdExpandMore, MdExpandLess } from "react-icons/md";
 
 export const DropDownMenu = ({ name, links, toggleSubMenu, isSubMenuOpen }) => {
   return (
@@ -7,9 +7,9 @@ export const DropDownMenu = ({ name, links, toggleSubMenu, isSubMenuOpen }) => {
       <button className="dropdown-btn" onClick={() => toggleSubMenu(name)}>
         {name}
         {isSubMenuOpen ? (
-          <FaChevronUp className="dropdown-chevron" />
+          <MdExpandLess className="dropdown-chevron" />
         ) : (
-          <FaChevronDown className="dropdown-chevron" />
+          <MdExpandMore className="dropdown-chevron" />
         )}
       </button>
       <div
