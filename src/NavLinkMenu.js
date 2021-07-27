@@ -1,5 +1,5 @@
 import React from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { MdExpandMore, MdExpandLess } from "react-icons/md";
 
 export const NavLinkMenu = ({ name, links, isMenuOpen, toggleMenu }) => {
   return (
@@ -13,9 +13,9 @@ export const NavLinkMenu = ({ name, links, isMenuOpen, toggleMenu }) => {
         >
           {name}
           {isMenuOpen ? (
-            <FaChevronUp className="navbar-chevron" />
+            <MdExpandLess className="navbar-chevron" />
           ) : (
-            <FaChevronDown className="navbar-chevron" />
+            <MdExpandMore className="navbar-chevron" />
           )}
         </button>
         <div
