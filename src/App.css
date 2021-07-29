@@ -195,6 +195,7 @@ body {
   justify-content: space-around;
   position: relative;
   background-size: cover;
+  background-image: url("images/slideshow/icelandv2.jpg");
   transition: background-image 0.3s ease-in;
 }
 
